@@ -1,0 +1,32 @@
+body{
+    background: img 
+} 
+
+
+p{
+        font-family: courier;
+        font-size: 13px;
+        color: #777878  }
+
+a{
+	font-family: courier;
+	font-size: 13px;
+	text-decoration: none;
+	color: #d2edf3
+}
+
+.link :hover{
+	text-decoration:none;
+	color:#adb4db;
+	border-color:#adb4db;
+}
+
+.intro{
+	padding-top: 350px;
+	padding-left: 100px;
+}
+
+.link{
+	float: right;
+	padding-right: 100px;
+}
