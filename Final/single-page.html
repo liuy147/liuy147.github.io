@@ -1,0 +1,143 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>All About Apps</title>
+
+<link href="./css/bootstrap.css" rel='stylesheet' type='text/css' />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href='http://fonts.googleapis.com/css?family=Kreon:300,400,700' rel='stylesheet' type='text/css'>
+<link href="./css/style.css" rel="stylesheet" type="text/css" media="all" />
+<script src="./js/jquery.js"></script> 
+       <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+	</script>
+</head>
+    
+<body>
+<div class="header_bg" id="home">
+<div class="container">
+	<div class="row header text-center specials">
+		<div class="h_logo">
+			<a href="index.html"><img src="./images/logo.png" alt="" class="responsive"/></a>
+		</div>
+<nav class="top-nav">
+			<ul class="top-nav nav_list">
+				<li><a href="Collection.html">Collection</a></li>
+				<li class="page-scroll"><a href="Rank List.html">Rank List</a></li>
+				<li class="logo page-scroll"><a title="hexa" href="index.html"><img src="./images/logo.png" alt="" class="responsive"/></a></li>
+			    <li class="page-scroll"><a href="Inspiration.html">Inspiration </a></li>
+				<li class="page-scroll"><a href="#contact">get in touch</a></li>
+			</ul>
+			<a href="#" id="pull"><img src="./images/nav-icon.png" title="menu" /></a>
+		</nav>
+		<div class="clearfix"></div>
+	</div>
+</div>
+</div>
+
+<div class="blog">
+	<div class="container">
+		<div class="main row">
+			<h2 class="style">25+ apps to make your everyday life easier</h2>
+			<div class="details row">
+				<div class="col-md-6">
+					<img src="./images/blog_pic1.jpg" alt="" class="img-responsive"/>
+				</div>
+				<div class="col-md-6"><br><br>
+                    <p class="para"><a href="http://darkskyapp.com/">Dark Sky </a>- 
+A weather app with startling accuracy, its interface tells you things like: “Light rain starting in 22 minutes.” It also shows you beautiful weather maps that let you play local-news weather expert. “It’s like a wizard,” says our CTO, Gavin Hall. “If this app were available in the 1600s, it would have been burned at the stake for witchcraft.”</p>
+					<p class="para">
+<a href="http://www.thinkdirtyapp.com/">Think Dirty
+ </a> - This app tells you exactly what’s in the personal care product you’re about to buy. You scan the barcode, and it shares information about potentially harmful ingredients (and gives alternatives, if you want them). It’s useful for fact-checking label claims like “all-natural” and “organic.” Kyle Shearer of our Events Workgroup says, “It helps me make informed choices on products that I am bringing home.”</p>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<p class="para"><a href="https://getpocket.com/">Pocket
+ </a> - One of those apps on this list that you may already know about, it lets you save blog posts and articles to read when you’re offline. TEDx Digital Strategist Alex Rudloff says, “I’m able to keep track of all the articles that get sent my way. In this post-Google Reader world, it’s my primary way of keeping up on things.” Community Support Manager Mireille Pilloud adds, “They send out a weekly email I like that shows the most-Pocketed articles and suggests articles for me based on what I generally read.” Another feature that gets big ups from our staff—the fact that you can set the font size because it strips out the content’s original formatting.</p>
+            	<p class="para"><a href="https://en.todoist.com/">Todoist
+ </a> - Like both Wunderlist and Trello, this to-do list helper has both an app and a web client that communicate. “I found this in my never-ending search for the perfect task management app,” says Product Development Associate Will True. “This isn’t necessarily it, but it provides simple task organization—by project, category, priority, due date. It’s not fancy, which is honestly why I like it. It also has great APIs so I can hook other things or build my own little tools on the data it provides.”</p>
+			<div class="read_more">
+				<a href="single-page.html">read more</a>
+			</div>
+		</div>
+	</div>
+</div><!-- end main -->
+    
+    
+<div class="footer_bg" id="contact">
+<div class="container">
+	<div class="row footer">
+		<div class="col-md-8 contact_left">
+			<h3>get in touch</h3>
+            <p>In order to subscribe our news use the form  to sign up:</h4>
+        
+			<form method="post">
+				<input type="text" value="Name (Required)" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}">
+				<input type="text" value="Email (Required)" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}">
+				<input type="text" value="Passward (Required)" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Subject';}">
+				<textarea onfocus="if(this.value == 'Your Message here....') this.value='';" onblur="if(this.value == '') this.value='Your Message here....;" ></textarea>		
+        </form>
+            <button class="click">Submit</button>
+<div class="message">
+  Submit Successfully!
+  <button class="okay">Okay</button>
+</div>
+		</div>
+    
+		<div class="col-md-4  contact_right">	
+			<ul class="list-unstyled address">
+				<li><i class="fa fa-map-marker"></i><span>65 Fifth Ave</span></li>
+				<li><i class="fa fa-phone"></i><span>(001) 917 891 7617</span></li>
+				<li><i class="fa fa-envelope"></i><a href="mailto:mistletoe4257@gmail.com">mistletoe4257@gmail.com</a></li>
+			</ul>
+		</div>		
+	</div>
+</div>
+</div>
+    
+<div class="footer1_bg">
+	<div class="container">
+		<div class="row  footer">
+			<div class="copy text-center">
+				<p><span>&#169; All rights reserved | All About Apps</span></p>
+				<a href="#home" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"> </span></a>
+			</div>
+		</div>
+        
+		<script type="text/javascript">
+				$(function() {				  $('a[href*=#]:not([href=#])').click(function() {
+				    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+			
+				      var target = $(this.hash);
+				      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+				      if (target.length) {
+				        $('html,body').animate({
+				          scrollTop: target.offset().top
+				        }, 1000);
+				        return false;
+				      }
+				    }
+				  });
+				});
+		</script>
+	
+	</div>
+</div>
+</body>
+</html>
