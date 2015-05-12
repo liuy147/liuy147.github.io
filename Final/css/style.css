@@ -472,6 +472,87 @@ h2.style{
 	color: #323232;
 }
 
+/* Hover */
+.hover {
+  position: relative;
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  margin: 0 0px;
+  border: 5px solid #fff;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+
+  -webkit-transition: -webkit-transform 0.1s linear;
+  -moz-transition: -moz-transform 0.1s linear;
+  -o-transition: -o-transform 0.1s linear;
+  -ms-transition: -ms-transform 0.1s linear;
+  transition: transform 0.1s linear;
+
+  -webkit-box-shadow: 0px 0px 15px rgba(0,0,0,0.3);
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.3);
+  cursor: pointer;
+}
+
+.hover img {
+  width: 100%;
+
+  -webkit-transition: 0.1s linear;
+  -moz-transition: 0.1s linear;
+  -o-transition: 0.1s linear;
+  -ms-transition: 0.1s linear;
+  transition: 0.1s linear;
+
+  -webkit-transition-property: width;
+  -moz-transition-property: width;
+  -o-transition-property: width;
+  -ms-transition-property: width;
+  transition-property: width;
+
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+}
+
+.hover .caption {
+  position: absolute;
+  bottom: -100%;
+  color: white;
+  background: rgba(0,0,0,0.4);
+  padding: 5px;
+  margin: 0px;
+  width:100%;
+
+  -webkit-transition: bottom 0.1s ease-out;
+  -moz-transition: bottom 0.1s ease-out;
+  -o-transition: bottom 0.1s ease-out;
+  -ms-transition: bottom 0.1s ease-out;
+  transition: bottom 0.1s ease-out;
+}
+
+.hover:hover {
+  -webkit-transform: scale(1.2,1.2);
+  -moz-transform: scale(1.2,1.2);
+  -o-transform: scale(1.2,1.2);
+  -ms-transform: scale(1.2,1.2);
+  transform: scale(1.2,1.2);
+}
+
+.hover:hover .caption {
+  bottom: 0%;
+}
+
+.hover:hover img {
+  width: 200%;
+}
+
+
 /* start blog */
 .blog{
 	background: #ffffff;

@@ -1,5 +1,3 @@
-
-
 /* submit button */
 
 $(function() {
